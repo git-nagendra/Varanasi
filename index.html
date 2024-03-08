@@ -1,0 +1,1872 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>varanasi</title>
+    <!-- style css -->
+    <link rel="stylesheet" href="./assest/css/style.css" />
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="./assest/css/bootstrap.min.css" />
+    <!-- font-awesome css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <!-- swiper css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <header class="Header_bg_color">
+      <div
+        class="container d-flex justify-content-between align-items-center p-2"
+      >
+        <div class="logo_div d-flex align-items-center">
+          <div class="logo">
+            <img src="./assest/image/valogo.png" alt="" />
+          </div>
+          <h3 class="ms-3">
+            <span
+              id="mov"
+              style="color: #ec3236; font-weight: 700; font-size: 18px"
+            >
+            </span>
+          </h3>
+        </div>
+        <nav>
+          <ul class="nav_menu">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Destination</a></li>
+            <li><a href="#">Tours</a></li>
+            <li class="sub_menu">
+              <a href="#">
+                Blog
+                <span
+                  class="ms-1 menu_arwo"
+                  style="font-size: 13px; font-weight: 700"
+                  ><i class="fa-solid fa-chevron-down"></i></span
+              ></a>
+              <ul class="sub_link">
+                <li><a href="#">Blog Single</a></li>
+                <li><a href="#">Full Width List</a></li>
+                <li><a href="#">Blog Sidebar</a></li>
+                <li><a href="#">Left Sidebar</a></li>
+                <li><a href="#">Right Sidebar</a></li>
+                <li><a href="#">Blo No Result</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Care</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </nav>
+        <div class="ham">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </header>
+
+    <!-- carousel -->
+    <div class="carousel">
+      <!-- list item -->
+      <div class="list">
+        <div class="item image1">
+          <!-- <img src="./assest/image/vara.jpg"> -->
+          <div class="content">
+            <div class="author">GiorgioGT</div>
+            <div class="title">DESIGN SLIDER</div>
+            <div class="topic">Varanasi</div>
+            <div class="des">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
+              omnis.
+            </div>
+            <div class="buttons">
+              <button>SEE MORE</button>
+              <button>SUBSCRIBE</button>
+            </div>
+          </div>
+        </div>
+        <div class="item image2">
+          <!-- <img src="./assest/image/vara1.jpg"> -->
+          <div class="content">
+            <div class="author">giorgioGT</div>
+            <div class="title">DESIGN SLIDER</div>
+            <div class="topic">Ayodhya</div>
+            <div class="des">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora,
+              cumque.
+            </div>
+            <div class="buttons">
+              <button>SEE MORE</button>
+              <button>SUBSCRIBE</button>
+            </div>
+          </div>
+        </div>
+        <div class="item image3">
+          <!-- <img src="./assest/image/aa.jpg"> -->
+          <div class="content">
+            <div class="author">giorgioGT</div>
+            <div class="title">DESIGN SLIDER</div>
+            <div class="topic">Varanasi</div>
+            <div class="des">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Molestiae, delectus.
+            </div>
+            <div class="buttons">
+              <button>SEE MORE</button>
+              <button>SUBSCRIBE</button>
+            </div>
+          </div>
+        </div>
+        <div class="item image4">
+          <!-- <img src="./assest/image/gate.jpg"> -->
+          <div class="content">
+            <div class="author">giorgioGT</div>
+            <div class="title">DESIGN SLIDER</div>
+            <div class="topic">Swarved Mahamandir</div>
+            <div class="des">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Obcaecati, suscipit.
+            </div>
+            <div class="buttons">
+              <button>SEE MORE</button>
+              <button>SUBSCRIBE</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- list thumnail -->
+      <div class="thumbnail">
+        <div class="item">
+          <img src="./assest/image/gate.jpg" />
+          <div class="content">
+            <div class="title">Name Slider</div>
+            <div class="description">Description</div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="./assest/image/vara.jpg" />
+          <div class="content">
+            <div class="title">Name Slider</div>
+            <div class="description">Description</div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="./assest/image/vara1.jpg" />
+          <div class="content">
+            <div class="title">Name Slider</div>
+            <div class="description">Description</div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="./assest/image/aa.jpg" />
+          <div class="content">
+            <div class="title">Name Slider</div>
+            <div class="description">Description</div>
+          </div>
+        </div>
+      </div>
+      <!-- next prev -->
+
+      <div class="arrows">
+        <button id="prev"><i class="fa-solid fa-chevron-left"></i></button>
+        <button id="next"><i class="fa-solid fa-chevron-right"></i></button>
+      </div>
+      <!-- time running -->
+      <div class="time"></div>
+    </div>
+    <section>
+      <div class="about">
+        <div class="container py-5">
+          <div class="row">
+            <div
+              class="col-md-6 col-lg-3 d-flex justify-content-center align-items-center d-flex justify-content-center"
+            >
+              <div class="destination d-flex gap-3 py-3">
+                <div class="de-image">
+                  <i class="fa-solid fa-plane-departure"></i>
+                </div>
+                <div class="de_text">
+                  <h4>20+ DESTINATIONS</h4>
+                  <p>Morbi leo risus, porta ac</p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-md-6 col-lg-3 d-flex justify-content-center align-items-center d-flex justify-content-center"
+            >
+              <div class="destination d-flex gap-3 py-3">
+                <div class="de-image">
+                  <i class="fa-solid fa-money-bill-1"></i>
+                </div>
+                <div class="de_text">
+                  <h4>BEST PRICE</h4>
+                  <p>Morbi leo risus, porta ac</p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-md-6 col-lg-3 d-flex justify-content-center align-items-center d-flex justify-content-center"
+            >
+              <div class="destination d-flex gap-3 py-3">
+                <div class="de-image">
+                  <i class="fa-solid fa-user-astronaut"></i>
+                </div>
+                <div class="de_text">
+                  <h4>GREAT CUSTOMER</h4>
+                  <p>Morbi leo risus, porta ac</p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-md-6 col-lg-3 d-flex justify-content-center align-items-center d-flex justify-content-center"
+            >
+              <div class="destination d-flex gap-3 py-3">
+                <div class="de-image">
+                  <i class="fa-solid fa-calendar-days"></i>
+                </div>
+                <div class="de_text">
+                  <h4>SUPER FAST BOOKING</h4>
+                  <p>Morbi leo risus, porta ac</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="container py-5">
+        <div class="book_traver">
+          <div class="form">
+            <div class="row">
+              <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center align-items-center p-2 my-2">
+                <div class="pick_up ">
+                  <input type="text" placeholder="Pick Up ----">
+                  <span><i class="fa-solid fa-location-dot"></i></span>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center align-items-center my-2 p-2">
+                <div class="pick_up">
+                  <input type="text" placeholder="Drop ----">
+                  <span><i class="fa-solid fa-location-dot"></i></span>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center align-items-center my-2 p-2">
+              <div class="pick_up">
+                <input type="date" placeholder="Date----">
+              </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center align-items-center p-2 my-2 d-flex justify-content-center align-items-center">
+                <button class="book_btn">Book Now</button>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+    </section>
+    <section class="Packages_bg py-3">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-sm-6 heading">
+            <h1>Our Tour Packages</h1>
+            <p>The trending tours are based on user bookings.</p>
+          </div>
+          <div class="col-sm-6 d-flex justify-content-end">
+            <div class="buttons me-2">
+              <button
+                class="p-1 px-3"
+                style="border-radius: 30px; letter-spacing: 0; color: #fff"
+              >
+                View All
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-2 g-4">
+          <div
+            class="col-md-6 col-lg-3 d-flex justify-content-center align-items-center"
+          >
+            <div class="tour_Packages">
+              <div class="tour_Package_image">
+                <img src="./assest/image/tour.jpg" alt="" />
+              </div>
+              <div class="detail_wrapper">
+                <div class="prise_text">
+                  <h5>VARANASI AYODHAYA TOUR</h5>
+                  <p>Prayagraj | varanasi |</p>
+                </div>
+                <div class="rating d-flex justify-content-between">
+                  <p>From</p>
+                  <div class="star_wrapper">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                </div>
+                <div class="prise_detail d-flex justify-content-between">
+                  <h6>₹1200.00/Person</h6>
+                  <div class="star_text">
+                    <p>4.7 (577)</p>
+                  </div>
+                </div>
+                <div class="time">
+                  <p>
+                    <span>
+                      <span class="me-2"
+                        ><i
+                          class="fa-regular fa-clock"
+                          style="font-weight: 600"
+                        ></i></span
+                      >2 Day </span
+                    >|<span>0 Night</span>
+                  </p>
+                  <p>
+                    <span class="me-2"
+                      ><i
+                        class="fa-regular fa-circle-check"
+                        style="color: #ec3236; font-weight: 600"
+                      ></i></span
+                    >Included Hotel
+                  </p>
+                  <p>
+                    <span class="me-2"
+                      ><i
+                        class="fa-regular fa-circle-check"
+                        style="color: #ec3236; font-weight: 600"
+                      ></i></span
+                    >Included Food
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md-6 col-lg-3 d-flex justify-content-center align-items-center"
+          >
+            <div class="tour_Packages">
+              <div class="tour_Package_image">
+                <img src="./assest/image/tour.jpg" alt="" />
+              </div>
+              <div class="detail_wrapper">
+                <div class="prise_text">
+                  <h5>VARANASI AYODHAYA TOUR</h5>
+                  <p>Prayagraj | varanasi |</p>
+                </div>
+                <div class="rating d-flex justify-content-between">
+                  <p>From</p>
+                  <div class="star_wrapper">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                </div>
+                <div class="prise_detail d-flex justify-content-between">
+                  <h6>₹1200.00/Person</h6>
+                  <div class="star_text">
+                    <p>4.7 (577)</p>
+                  </div>
+                </div>
+                <div class="time">
+                  <p>
+                    <span>
+                      <span class="me-2"
+                        ><i
+                          class="fa-regular fa-clock"
+                          style="font-weight: 600"
+                        ></i></span
+                      >2 Day </span
+                    >|<span>0 Night</span>
+                  </p>
+                  <p>
+                    <span class="me-2"
+                      ><i
+                        class="fa-regular fa-circle-check"
+                        style="color: #ec3236; font-weight: 600"
+                      ></i></span
+                    >Included Hotel
+                  </p>
+                  <p>
+                    <span class="me-2"
+                      ><i
+                        class="fa-regular fa-circle-check"
+                        style="color: #ec3236; font-weight: 600"
+                      ></i></span
+                    >Included Food
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md-6 col-lg-3 d-flex justify-content-center align-items-center"
+          >
+            <div class="tour_Packages">
+              <div class="tour_Package_image">
+                <img src="./assest/image/tour.jpg" alt="" />
+              </div>
+              <div class="detail_wrapper">
+                <div class="prise_text">
+                  <h5>VARANASI AYODHAYA TOUR</h5>
+                  <p>Prayagraj | varanasi |</p>
+                </div>
+                <div class="rating d-flex justify-content-between">
+                  <p>From</p>
+                  <div class="star_wrapper">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                </div>
+                <div class="prise_detail d-flex justify-content-between">
+                  <h6>₹1200.00/Person</h6>
+                  <div class="star_text">
+                    <p>4.7 (577)</p>
+                  </div>
+                </div>
+                <div class="time">
+                  <p>
+                    <span>
+                      <span class="me-2"
+                        ><i
+                          class="fa-regular fa-clock"
+                          style="font-weight: 600"
+                        ></i></span
+                      >2 Day </span
+                    >|<span>0 Night</span>
+                  </p>
+                  <p>
+                    <span class="me-2"
+                      ><i
+                        class="fa-regular fa-circle-check"
+                        style="color: #ec3236; font-weight: 600"
+                      ></i></span
+                    >Included Hotel
+                  </p>
+                  <p>
+                    <span class="me-2"
+                      ><i
+                        class="fa-regular fa-circle-check"
+                        style="color: #ec3236; font-weight: 600"
+                      ></i></span
+                    >Included Food
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md-6 col-lg-3 d-flex justify-content-center align-items-center"
+          >
+            <div class="tour_Packages">
+              <div class="tour_Package_image">
+                <img src="./assest/image/tour.jpg" alt="" />
+              </div>
+              <div class="detail_wrapper">
+                <div class="prise_text">
+                  <h5>VARANASI AYODHAYA TOUR</h5>
+                  <p>Prayagraj | varanasi |</p>
+                </div>
+                <div class="rating d-flex justify-content-between">
+                  <p>From</p>
+                  <div class="star_wrapper">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                </div>
+                <div class="prise_detail d-flex justify-content-between">
+                  <h6>₹1200.00/Person</h6>
+                  <div class="star_text">
+                    <p>4.7 (577)</p>
+                  </div>
+                </div>
+                <div class="time">
+                  <p>
+                    <span>
+                      <span class="me-2"
+                        ><i
+                          class="fa-regular fa-clock"
+                          style="font-weight: 600"
+                        ></i></span
+                      >2 Day </span
+                    >|<span>0 Night</span>
+                  </p>
+                  <p>
+                    <span class="me-2"
+                      ><i
+                        class="fa-regular fa-circle-check"
+                        style="color: #ec3236; font-weight: 600"
+                      ></i></span
+                    >Included Hotel
+                  </p>
+                  <p>
+                    <span class="me-2"
+                      ><i
+                        class="fa-regular fa-circle-check"
+                        style="color: #ec3236; font-weight: 600"
+                      ></i></span
+                    >Included Food
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md-6 col-lg-3 d-flex justify-content-center align-items-center"
+          >
+            <div class="tour_Packages">
+              <div class="tour_Package_image">
+                <img src="./assest/image/tour.jpg" alt="" />
+              </div>
+              <div class="detail_wrapper">
+                <div class="prise_text">
+                  <h5>VARANASI AYODHAYA TOUR</h5>
+                  <p>Prayagraj | varanasi |</p>
+                </div>
+                <div class="rating d-flex justify-content-between">
+                  <p>From</p>
+                  <div class="star_wrapper">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                </div>
+                <div class="prise_detail d-flex justify-content-between">
+                  <h6>₹1200.00/Person</h6>
+                  <div class="star_text">
+                    <p>4.7 (577)</p>
+                  </div>
+                </div>
+                <div class="time">
+                  <p>
+                    <span>
+                      <span class="me-2"
+                        ><i
+                          class="fa-regular fa-clock"
+                          style="font-weight: 600"
+                        ></i></span
+                      >2 Day </span
+                    >|<span>0 Night</span>
+                  </p>
+                  <p>
+                    <span class="me-2"
+                      ><i
+                        class="fa-regular fa-circle-check"
+                        style="color: #ec3236; font-weight: 600"
+                      ></i></span
+                    >Included Hotel
+                  </p>
+                  <p>
+                    <span class="me-2"
+                      ><i
+                        class="fa-regular fa-circle-check"
+                        style="color: #ec3236; font-weight: 600"
+                      ></i></span
+                    >Included Food
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md-6 col-lg-3 d-flex justify-content-center align-items-center"
+          >
+            <div class="tour_Packages">
+              <div class="tour_Package_image">
+                <img src="./assest/image/tour.jpg" alt="" />
+              </div>
+              <div class="detail_wrapper">
+                <div class="prise_text">
+                  <h5>VARANASI AYODHAYA TOUR</h5>
+                  <p>Prayagraj | varanasi |</p>
+                </div>
+                <div class="rating d-flex justify-content-between">
+                  <p>From</p>
+                  <div class="star_wrapper">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                </div>
+                <div class="prise_detail d-flex justify-content-between">
+                  <h6>₹1200.00/Person</h6>
+                  <div class="star_text">
+                    <p>4.7 (577)</p>
+                  </div>
+                </div>
+                <div class="time">
+                  <p>
+                    <span>
+                      <span class="me-2"
+                        ><i
+                          class="fa-regular fa-clock"
+                          style="font-weight: 600"
+                        ></i></span
+                      >2 Day </span
+                    >|<span>0 Night</span>
+                  </p>
+                  <p>
+                    <span class="me-2"
+                      ><i
+                        class="fa-regular fa-circle-check"
+                        style="color: #ec3236; font-weight: 600"
+                      ></i></span
+                    >Included Hotel
+                  </p>
+                  <p>
+                    <span class="me-2"
+                      ><i
+                        class="fa-regular fa-circle-check"
+                        style="color: #ec3236; font-weight: 600"
+                      ></i></span
+                    >Included Food
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md-6 col-lg-3 d-flex justify-content-center align-items-center"
+          >
+            <div class="tour_Packages">
+              <div class="tour_Package_image">
+                <img src="./assest/image/tour.jpg" alt="" />
+              </div>
+              <div class="detail_wrapper">
+                <div class="prise_text">
+                  <h5>VARANASI AYODHAYA TOUR</h5>
+                  <p>Prayagraj | varanasi |</p>
+                </div>
+                <div class="rating d-flex justify-content-between">
+                  <p>From</p>
+                  <div class="star_wrapper">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                </div>
+                <div class="prise_detail d-flex justify-content-between">
+                  <h6>₹1200.00/Person</h6>
+                  <div class="star_text">
+                    <p>4.7 (577)</p>
+                  </div>
+                </div>
+                <div class="time">
+                  <p>
+                    <span>
+                      <span class="me-2"
+                        ><i
+                          class="fa-regular fa-clock"
+                          style="font-weight: 600"
+                        ></i></span
+                      >2 Day </span
+                    >|<span>0 Night</span>
+                  </p>
+                  <p>
+                    <span class="me-2"
+                      ><i
+                        class="fa-regular fa-circle-check"
+                        style="color: #ec3236; font-weight: 600"
+                      ></i></span
+                    >Included Hotel
+                  </p>
+                  <p>
+                    <span class="me-2"
+                      ><i
+                        class="fa-regular fa-circle-check"
+                        style="color: #ec3236; font-weight: 600"
+                      ></i></span
+                    >Included Food
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md-6 col-lg-3 d-flex justify-content-center align-items-center"
+          >
+            <div class="tour_Packages">
+              <div class="tour_Package_image">
+                <img src="./assest/image/tour.jpg" alt="" />
+              </div>
+              <div class="detail_wrapper">
+                <div class="prise_text">
+                  <h5>VARANASI AYODHAYA TOUR</h5>
+                  <p>Prayagraj | varanasi |</p>
+                </div>
+                <div class="rating d-flex justify-content-between">
+                  <p>From</p>
+                  <div class="star_wrapper">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                </div>
+                <div class="prise_detail d-flex justify-content-between">
+                  <h6>₹1200.00/Person</h6>
+                  <div class="star_text">
+                    <p>4.7 (577)</p>
+                  </div>
+                </div>
+                <div class="time">
+                  <p>
+                    <span>
+                      <span class="me-2"
+                        ><i
+                          class="fa-regular fa-clock"
+                          style="font-weight: 600"
+                        ></i></span
+                      >2 Day </span
+                    >|<span>0 Night</span>
+                  </p>
+                  <p>
+                    <span class="me-2"
+                      ><i
+                        class="fa-regular fa-circle-check"
+                        style="color: #ec3236; font-weight: 600"
+                      ></i></span
+                    >Included Hotel
+                  </p>
+                  <p>
+                    <span class="me-2"
+                      ><i
+                        class="fa-regular fa-circle-check"
+                        style="color: #ec3236; font-weight: 600"
+                      ></i></span
+                    >Included Food
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container py-5">
+        <div class="row pb-5">
+          <div class="row">
+            <div class="col-12 heading">
+              <h1>Services We Provide</h1>
+              <p>The trending tours are based on user bookings</p>
+            </div>
+          </div>
+        </div>
+        <div class="row g-3 mt-3 mb-5">
+          <div
+            class="col-6 col-md-6 col-lg-3 d-flex justify-content-center align-items-center col-xl-2"
+          >
+            <div class="Service_wrapper active">
+              <div class="Service_image">
+                <img src="./assest/image/car.jpg" alt="" />
+              </div>
+              <div class="service_text">
+                <h6 class="p-0 m-0 ms-2">CAB</h6>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-6 col-md-6 col-lg-3 d-flex justify-content-center align-items-center col-xl-2"
+          >
+            <div class="Service_wrapper">
+              <div class="Service_image">
+                <img src="./assest/image/morning-boat-ride.jpg" alt="" />
+              </div>
+              <div class="service_text boat">
+                <h6 class="p-0 m-0 ms-3">BOAT RIDE</h6>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-6 col-md-6 col-lg-3 d-flex justify-content-center align-items-center col-xl-2"
+          >
+            <div class="Service_wrapper">
+              <div class="Service_image">
+                <img src="./assest/image/varanasi-hotels.png" alt="" />
+              </div>
+              <div class="service_text Hotel">
+                <h6 class="p-0 m-0 ms-3">HOTELS</h6>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-6 col-md-6 col-lg-3 d-flex justify-content-center align-items-center col-xl-2"
+          >
+            <div class="Service_wrapper">
+              <div class="Service_image">
+                <img src="./assest/image/varanasi-temple-darshan.png" alt="" />
+              </div>
+              <div class="service_text darshan">
+                <h6 class="p-0 m-0 ms-3">DARSHAN</h6>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-6 col-md-6 col-lg-3 d-flex justify-content-center align-items-center col-xl-2"
+          >
+            <div class="Service_wrapper">
+              <div class="Service_image">
+                <img src="./assest/image/travel-itinerary.png" alt="" />
+              </div>
+              <div class="service_text darshan1">
+                <h6 class="p-0 m-0 ms-3">SIGHSEEING</h6>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-6 col-md-6 col-lg-3 d-flex justify-content-center align-items-center col-xl-2"
+          >
+            <div class="Service_wrapper">
+              <div class="Service_image px-4">
+                <img src="./assest/image/airplane.png" alt="" />
+              </div>
+              <div class="service_text air">
+                <h6 class="p-0 m-0 ms-3">AIRPORT P&D</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="Packages_bg mt-3 py-3">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="heading">
+              <h1>Cab Booking</h1>
+              <p>The trending tours are based on user bookings.</p>
+            </div>
+          </div>
+          <div class="col-sm-6 d-flex justify-content-end">
+            <div class="buttons me-2">
+              <button
+                class="p-1 px-3"
+                style="border-radius: 30px; letter-spacing: 0; color: #fff"
+              >
+                View All
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-2 g-3 mb-5">
+          <div
+            class="col-md-6 col-lg-3 d-flex justify-content-center align-items-center"
+          >
+            <div class="tour_Packages">
+              <div class="tour_Package_image car_image">
+                <img src="./assest/image/Ertiga-Taxi-in-Varanasi.png" alt="" />
+              </div>
+              <div class="detail_wrapper" style="margin-top: 0; padding-top: 0">
+                <div class="prise_text">
+                  <h5>Ertiga (SUV)</h5>
+                </div>
+                <div class="mt-2 d-flex justify-content-between">
+                  <h6 class="m-0">Local Varanasi</h6>
+                  <div class="prise_text">
+                    <p class="text_style">Rs. 13</p>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <h6 class="m-0">Hours</h6>
+                  <div class="prise_text">
+                    <p class="text_style">10</p>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <h6 class="m-0">Outstation</h6>
+                  <div class="prise_text">
+                    <p class="text_style">Rs. 250/KM</p>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <h6 class="m-0">Distance Min.</h6>
+                  <div class="prise_text">
+                    <p class="text_style">200KM / Day</p>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <h6 class="m-0">Airport Transfer</h6>
+                  <div class="prise_text">
+                    <p class="text_style">Rs. 0</p>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <h6 class="m-0">Night Charges</h6>
+                  <div class="prise_text">
+                    <p class="text_style">Rs. 300</p>
+                  </div>
+                </div>
+                <hr />
+                <div
+                  class="buttons d-flex justify-content-end align-items-center"
+                  style="margin-top: 13px"
+                >
+                  <button
+                    class="p-1 px-3"
+                    style="border-radius: 30px; letter-spacing: 0; color: #fff"
+                  >
+                    Book Now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md-6 col-lg-3 d-flex justify-content-center align-items-center"
+          >
+            <div class="tour_Packages">
+              <div class="tour_Package_image car_image">
+                <img
+                  src="./assest/image/Force-cruiser-taxi-cab-in-varanasi.png"
+                  alt=""
+                />
+              </div>
+              <div class="detail_wrapper" style="margin-top: 0; padding-top: 0">
+                <div class="prise_text">
+                  <h5>Hyundai Xcent(Sedan)</h5>
+                </div>
+                <div class="mt-2 d-flex justify-content-between">
+                  <h6 class="m-0">Local Varanasi</h6>
+                  <div class="prise_text">
+                    <p class="text_style">Rs. 13</p>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <h6 class="m-0">Hours</h6>
+                  <div class="prise_text">
+                    <p class="text_style">10</p>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <h6 class="m-0">Outstation</h6>
+                  <div class="prise_text">
+                    <p class="text_style">Rs. 250/KM</p>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <h6 class="m-0">Distance Min.</h6>
+                  <div class="prise_text">
+                    <p class="text_style">200KM / Day</p>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <h6 class="m-0">Airport Transfer</h6>
+                  <div class="prise_text">
+                    <p class="text_style">Rs. 0</p>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <h6 class="m-0">Night Charges</h6>
+                  <div class="prise_text">
+                    <p class="text_style">Rs. 300</p>
+                  </div>
+                </div>
+                <hr />
+                <div
+                  class="buttons d-flex justify-content-end align-items-center"
+                  style="margin-top: 13px"
+                >
+                  <button
+                    class="p-1 px-3"
+                    style="border-radius: 30px; letter-spacing: 0; color: #fff"
+                  >
+                    Book Now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md-6 col-lg-3 d-flex justify-content-center align-items-center"
+          >
+            <div class="tour_Packages">
+              <div class="tour_Package_image car_image">
+                <img
+                  src="./assest/image/innova-crysta-taxi-cab-in-varanasi.png"
+                  alt=""
+                />
+              </div>
+              <div class="detail_wrapper" style="margin-top: 0; padding-top: 0">
+                <div class="prise_text">
+                  <h5>Maruti Swift Dzire (Sedan)</h5>
+                </div>
+                <div class="mt-2 d-flex justify-content-between">
+                  <h6 class="m-0">Local Varanasi</h6>
+                  <div class="prise_text">
+                    <p class="text_style">Rs. 13</p>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <h6 class="m-0">Hours</h6>
+                  <div class="prise_text">
+                    <p class="text_style">10</p>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <h6 class="m-0">Outstation</h6>
+                  <div class="prise_text">
+                    <p class="text_style">Rs. 250/KM</p>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <h6 class="m-0">Distance Min.</h6>
+                  <div class="prise_text">
+                    <p class="text_style">200KM / Day</p>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <h6 class="m-0">Airport Transfer</h6>
+                  <div class="prise_text">
+                    <p class="text_style">Rs. 0</p>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <h6 class="m-0">Night Charges</h6>
+                  <div class="prise_text">
+                    <p class="text_style">Rs. 300</p>
+                  </div>
+                </div>
+                <hr />
+                <div
+                  class="buttons d-flex justify-content-end align-items-center"
+                  style="margin-top: 13px"
+                >
+                  <button
+                    class="p-1 px-3"
+                    style="border-radius: 30px; letter-spacing: 0; color: #fff"
+                  >
+                    Book Now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md-6 col-lg-3 d-flex justify-content-center align-items-center"
+          >
+            <div class="tour_Packages">
+              <div class="tour_Package_image car_image">
+                <img
+                  src="./assest/image/Force-cruiser-taxi-cab-in-varanasi.png"
+                  alt=""
+                />
+              </div>
+              <div class="detail_wrapper" style="margin-top: 0; padding-top: 0">
+                <div class="prise_text">
+                  <h5>Innova (SUV)</h5>
+                </div>
+                <div class="mt-2 d-flex justify-content-between">
+                  <h6 class="m-0">Local Varanasi</h6>
+                  <div class="prise_text">
+                    <p class="text_style">Rs. 13</p>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <h6 class="m-0">Hours</h6>
+                  <div class="prise_text">
+                    <p class="text_style">10</p>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <h6 class="m-0">Outstation</h6>
+                  <div class="prise_text">
+                    <p class="text_style">Rs. 250/KM</p>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <h6 class="m-0">Distance Min.</h6>
+                  <div class="prise_text">
+                    <p class="text_style">200KM / Day</p>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <h6 class="m-0">Airport Transfer</h6>
+                  <div class="prise_text">
+                    <p class="text_style">Rs. 0</p>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <h6 class="m-0">Night Charges</h6>
+                  <div class="prise_text">
+                    <p class="text_style">Rs. 300</p>
+                  </div>
+                </div>
+                <hr />
+                <div
+                  class="buttons d-flex justify-content-end align-items-center"
+                  style="margin-top: 13px"
+                >
+                  <button
+                    class="p-1 px-3"
+                    style="border-radius: 30px; letter-spacing: 0; color: #fff"
+                  >
+                    Book Now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md-6 col-lg-3 d-flex justify-content-center align-items-center"
+          >
+            <div class="tour_Packages">
+              <div class="tour_Package_image car_image">
+                <img
+                  src="./assest/image/innova-crysta-taxi-cab-in-varanasi.png"
+                  alt=""
+                />
+              </div>
+              <div class="detail_wrapper" style="margin-top: 0; padding-top: 0">
+                <div class="prise_text">
+                  <h5>Ertiga (SUV)</h5>
+                </div>
+                <div class="mt-2 d-flex justify-content-between">
+                  <h6 class="m-0">Local Varanasi</h6>
+                  <div class="prise_text">
+                    <p class="text_style">Rs. 13</p>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <h6 class="m-0">Hours</h6>
+                  <div class="prise_text">
+                    <p class="text_style">10</p>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <h6 class="m-0">Outstation</h6>
+                  <div class="prise_text">
+                    <p class="text_style">Rs. 250/KM</p>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <h6 class="m-0">Distance Min.</h6>
+                  <div class="prise_text">
+                    <p class="text_style">200KM / Day</p>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <h6 class="m-0">Airport Transfer</h6>
+                  <div class="prise_text">
+                    <p class="text_style">Rs. 0</p>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <h6 class="m-0">Night Charges</h6>
+                  <div class="prise_text">
+                    <p class="text_style">Rs. 300</p>
+                  </div>
+                </div>
+                <hr />
+                <div
+                  class="buttons d-flex justify-content-end align-items-center"
+                  style="margin-top: 13px"
+                >
+                  <button
+                    class="p-1 px-3"
+                    style="border-radius: 30px; letter-spacing: 0; color: #fff"
+                  >
+                    Book Now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md-6 col-lg-3 d-flex justify-content-center align-items-center"
+          >
+            <div class="tour_Packages">
+              <div class="tour_Package_image car_image">
+                <img
+                  src="./assest/image/innova-taxi-cab-in-varanasi.png"
+                  alt=""
+                />
+              </div>
+              <div class="detail_wrapper" style="margin-top: 0; padding-top: 0">
+                <div class="prise_text">
+                  <h5>Maruti Swift Dzire (Sedan)</h5>
+                </div>
+                <div class="mt-2 d-flex justify-content-between">
+                  <h6 class="m-0">Local Varanasi</h6>
+                  <div class="prise_text">
+                    <p class="text_style">Rs. 13</p>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <h6 class="m-0">Hours</h6>
+                  <div class="prise_text">
+                    <p class="text_style">10</p>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <h6 class="m-0">Outstation</h6>
+                  <div class="prise_text">
+                    <p class="text_style">Rs. 250/KM</p>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <h6 class="m-0">Distance Min.</h6>
+                  <div class="prise_text">
+                    <p class="text_style">200KM / Day</p>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <h6 class="m-0">Airport Transfer</h6>
+                  <div class="prise_text">
+                    <p class="text_style">Rs. 0</p>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <h6 class="m-0">Night Charges</h6>
+                  <div class="prise_text">
+                    <p class="text_style">Rs. 300</p>
+                  </div>
+                </div>
+                <hr />
+                <div
+                  class="buttons d-flex justify-content-end align-items-center"
+                  style="margin-top: 13px"
+                >
+                  <button
+                    class="p-1 px-3"
+                    style="border-radius: 30px; letter-spacing: 0; color: #fff"
+                  >
+                    Book Now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md-6 col-lg-3 d-flex justify-content-center align-items-center"
+          >
+            <div class="tour_Packages">
+              <div class="tour_Package_image car_image">
+                <img
+                  src="./assest/image/Mini-Bus-taxi-cab-in-varanasi.png"
+                  alt=""
+                />
+              </div>
+              <div class="detail_wrapper" style="margin-top: 0; padding-top: 0">
+                <div class="prise_text">
+                  <h5>Ertiga (SUV)</h5>
+                </div>
+                <div class="mt-2 d-flex justify-content-between">
+                  <h6 class="m-0">Local Varanasi</h6>
+                  <div class="prise_text">
+                    <p class="text_style">Rs. 13</p>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <h6 class="m-0">Hours</h6>
+                  <div class="prise_text">
+                    <p class="text_style">10</p>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <h6 class="m-0">Outstation</h6>
+                  <div class="prise_text">
+                    <p class="text_style">Rs. 250/KM</p>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <h6 class="m-0">Distance Min.</h6>
+                  <div class="prise_text">
+                    <p class="text_style">200KM / Day</p>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <h6 class="m-0">Airport Transfer</h6>
+                  <div class="prise_text">
+                    <p class="text_style">Rs. 0</p>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <h6 class="m-0">Night Charges</h6>
+                  <div class="prise_text">
+                    <p class="text_style">Rs. 300</p>
+                  </div>
+                </div>
+                <hr />
+                <div
+                  class="buttons d-flex justify-content-end align-items-center"
+                  style="margin-top: 13px"
+                >
+                  <button
+                    class="p-1 px-3"
+                    style="border-radius: 30px; letter-spacing: 0; color: #fff"
+                  >
+                    Book Now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md-6 col-lg-3 d-flex justify-content-center align-items-center"
+          >
+            <div class="tour_Packages">
+              <div class="tour_Package_image car_image">
+                <img
+                  src="./assest/image/Swift-Dzire-taxi-cab-in-varanasi.png"
+                  alt=""
+                />
+              </div>
+              <div class="detail_wrapper" style="margin-top: 0; padding-top: 0">
+                <div class="prise_text">
+                  <h5>Ertiga (SUV)</h5>
+                </div>
+                <div class="mt-2 d-flex justify-content-between">
+                  <h6 class="m-0">Local Varanasi</h6>
+                  <div class="prise_text">
+                    <p class="text_style">Rs. 13</p>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <h6 class="m-0">Hours</h6>
+                  <div class="prise_text">
+                    <p class="text_style">10</p>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <h6 class="m-0">Outstation</h6>
+                  <div class="prise_text">
+                    <p class="text_style">Rs. 250/KM</p>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <h6 class="m-0">Distance Min.</h6>
+                  <div class="prise_text">
+                    <p class="text_style">200KM / Day</p>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <h6 class="m-0">Airport Transfer</h6>
+                  <div class="prise_text">
+                    <p class="text_style">Rs. 0</p>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <h6 class="m-0">Night Charges</h6>
+                  <div class="prise_text">
+                    <p class="text_style">Rs. 300</p>
+                  </div>
+                </div>
+                <hr />
+                <div
+                  class="buttons d-flex justify-content-end align-items-center"
+                  style="margin-top: 13px"
+                >
+                  <button
+                    class="p-1 px-3"
+                    style="border-radius: 30px; letter-spacing: 0; color: #fff"
+                  >
+                    Book Now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-sm-12 col-lg-6 mt-lg-0 mt-5 World d-flex justify-content-center align-items-start flex-column ps-sm-5 ps-3"
+          >
+            <h1>About Varanasi</h1>
+            <p>
+              Regarding the creation of Kashi, it is mentioned in the Shiv
+              Purana that the Advaita Parameshwara, who was engrossed in his
+              non-duality, had a desire to become another form. He appeared in
+              two forms due to the distinction of man and woman. Prakriti and
+              Purusha were also created by them. Nirguna Supreme God gave a
+              voice to them, ‘both of you should do penance, that would be a
+              perfect creation’.
+            </p>
+            <ul class="Altitude_li">
+              <li>
+                <i
+                  class="fa-regular fa-circle-check me-2"
+                  style="color: #ec3236"
+                ></i
+                ><span>Population</span> : 3,676,841 (As per 2011 census)
+              </li>
+              <li>
+                <i
+                  class="fa-regular fa-circle-check me-2"
+                  style="color: #ec3236"
+                ></i
+                ><span>Altitude</span> : 80.71 mtrs. above sea level
+              </li>
+              <li>
+                <i
+                  class="fa-regular fa-circle-check me-2"
+                  style="color: #ec3236"
+                ></i
+                ><span>Clothing (Summer)</span> : Cottons
+              </li>
+              <li>
+                <i
+                  class="fa-regular fa-circle-check me-2"
+                  style="color: #ec3236"
+                ></i
+                ><span>Clothing (Winter)</span> : Woollens
+              </li>
+              <li>
+                <i
+                  class="fa-regular fa-circle-check me-2"
+                  style="color: #ec3236"
+                ></i
+                ><span>Clothing (Winter)</span> : Woollens
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-12 col-lg-6">
+            <img
+              src="./assest/image/png1.png!sw800"
+              alt=""
+              width="100%"
+              height="100%"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="Packages_bg pb-5">
+      <div class="container py-5">
+        <div class="row">
+          <div
+            class="col-sm-12 col-lg-6 Discover_wrapper d-flex justify-content-center align-items-center"
+          >
+            <img src="./assest/image/funfact_img.png" width="68%" alt="" />
+            <div class="Discover"></div>
+            <div class="extra">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <div class="curcl"></div>
+          </div>
+          <div
+            class="col-sm-12 col-lg-6 mt-lg-0 mt-5 World d-flex justify-content-center align-items-start flex-column ps-sm-5 ps-3"
+          >
+            <h1 class="mt-md-0 mt-4">
+              Discover The World<br />
+              With Our Guide
+            </h1>
+            <p>
+              Contrary to popular belief, Lorem Ipsum is not simply random text.
+              It has roots in a piece of classical Latin literature from 45 BC
+            </p>
+            <ul class="Altitude_li">
+              <li>
+                <i
+                  class="fa-regular fa-circle-check me-2"
+                  style="color: #ec3236"
+                ></i
+                ><span>Population</span> : 3,676,841 (As per 2011 census)
+              </li>
+              <li>
+                <i
+                  class="fa-regular fa-circle-check me-2"
+                  style="color: #ec3236"
+                ></i
+                ><span>Altitude</span> : 80.71 mtrs. above sea level
+              </li>
+              <li>
+                <i
+                  class="fa-regular fa-circle-check me-2"
+                  style="color: #ec3236"
+                ></i
+                ><span>Clothing (Summer)</span> : Cottons
+              </li>
+              <li>
+                <i
+                  class="fa-regular fa-circle-check me-2"
+                  style="color: #ec3236"
+                ></i
+                ><span>Clothing (Winter)</span> : Woollens
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="Quick_connect">
+      <div class="container">
+        <div class="row"></div>
+      </div>
+    </section>
+    <section>
+      <div class="container py-5">
+        <div class="row">
+          <div
+            class="heading d-flex justify-content-center align-items-center flex-column"
+          >
+            <h1>What Our Clients Say</h1>
+            <p>The trending tours are based on user bookings.</p>
+          </div>
+        </div>
+        <div class="row mt-2">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="client_wrapper">
+                  <div class="client_review">
+                    <div class="client_about px-sm-4 px-2">
+                      <h5 class="text-center m-0">Nagendra Patel</h5>
+                      <p class="text-center mt-2 m-0" style="font-size: 13px">
+                        UI/UX Designer
+                      </p>
+                      <p class="m-0 text-center mt-2">
+                        Once you are satisfied with the travel plan, our team
+                        will take care of all the bookings and reservations,
+                        including flights, hotels, transportation, and
+                        activities.
+                      </p>
+                    </div>
+                    <div class="client_review_image_inner">
+                      <img
+                        src="./assest/image/client.jpg"
+                        width="100%"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="client_wrapper">
+                  <div class="client_review">
+                    <div class="client_about px-sm-4 px-2">
+                      <h5 class="text-center m-0">Nagendra Patel</h5>
+                      <p class="text-center mt-2 m-0" style="font-size: 13px">
+                        UI/UX Designer
+                      </p>
+                      <p class="m-0 text-center mt-2">
+                        Once you are satisfied with the travel plan, our team
+                        will take care of all the bookings and reservations,
+                        including flights, hotels, transportation, and
+                        activities.
+                      </p>
+                    </div>
+                    <div class="client_review_image_inner">
+                      <img
+                        src="./assest/image/client.jpg"
+                        width="100%"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="client_wrapper">
+                  <div class="client_review">
+                    <div class="client_about px-sm-4 px-2">
+                      <h5 class="text-center m-0">Nagendra Patel</h5>
+                      <p class="text-center mt-2 m-0" style="font-size: 13px">
+                        UI/UX Designer
+                      </p>
+                      <p class="m-0 text-center mt-2">
+                        Once you are satisfied with the travel plan, our team
+                        will take care of all the bookings and reservations,
+                        including flights, hotels, transportation, and
+                        activities.
+                      </p>
+                    </div>
+                    <div class="client_review_image_inner">
+                      <img
+                        src="./assest/image/client.jpg"
+                        width="100%"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="client_wrapper">
+                  <div class="client_review">
+                    <div class="client_about px-sm-4 px-2">
+                      <h5 class="text-center m-0">Nagendra Patel</h5>
+                      <p class="text-center mt-2 m-0" style="font-size: 13px">
+                        UI/UX Designer
+                      </p>
+                      <p class="m-0 text-center mt-2">
+                        Once you are satisfied with the travel plan, our team
+                        will take care of all the bookings and reservations,
+                        including flights, hotels, transportation, and
+                        activities.
+                      </p>
+                    </div>
+                    <div class="client_review_image_inner">
+                      <img
+                        src="./assest/image/client.jpg"
+                        width="100%"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="client_wrapper">
+                  <div class="client_review">
+                    <div class="client_about px-sm-4 px-2">
+                      <h5 class="text-center m-0">Nagendra Patel</h5>
+                      <p class="text-center mt-2 m-0" style="font-size: 13px">
+                        UI/UX Designer
+                      </p>
+                      <p class="m-0 text-center mt-2">
+                        Once you are satisfied with the travel plan, our team
+                        will take care of all the bookings and reservations,
+                        including flights, hotels, transportation, and
+                        activities.
+                      </p>
+                    </div>
+                    <div class="client_review_image_inner">
+                      <img
+                        src="./assest/image/client.jpg"
+                        width="100%"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="client_wrapper">
+                  <div class="client_review">
+                    <div class="client_about px-sm-4 px-2">
+                      <h5 class="text-center m-0">Nagendra Patel</h5>
+                      <p class="text-center mt-2 m-0" style="font-size: 13px">
+                        UI/UX Designer
+                      </p>
+                      <p class="m-0 text-center mt-2">
+                        Once you are satisfied with the travel plan, our team
+                        will take care of all the bookings and reservations,
+                        including flights, hotels, transportation, and
+                        activities.
+                      </p>
+                    </div>
+                    <div class="client_review_image_inner">
+                      <img
+                        src="./assest/image/client.jpg"
+                        width="100%"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact mt-4 py-5">
+      <div class="container contact_wrapper">
+        <div class="row g-4">
+          <div class="col-md-12 col-lg-6">
+            <div class="heading">
+              <h1>Are you planning to</h1>
+              <h1 class="me-2">
+                Visit<span
+                  id="visit"
+                  style="color: #ec3236; padding: 10px; font-size: 25px"
+                >
+                  Kashi ~ Varanasi</span
+                >
+              </h1>
+              <p>Get assitance from the best tour operator team of varanasi.</p>
+            </div>
+            <hr />
+            <div class="contact_nav d-flex mt-4 ">
+              <ul>
+                <li>
+                  <i class="fa-regular fa-circle-check" style="color: #ec3236; font-weight: 600" ></i>
+                  Comfortable Hotel Stay
+                </li>
+                <li>
+                  <i class="fa-regular fa-circle-check" style="color: #ec3236; font-weight: 600" ></i>
+                  Supportive & Friendly Guides
+                </li>
+                <li>
+                  <i class="fa-regular fa-circle-check" style="color: #ec3236; font-weight: 600" ></i>
+                  Detailed itinerary
+                </li>
+
+              </ul>
+              <ul class="ms-5">
+                
+                <li>
+                  <i class="fa-regular fa-circle-check" style="color: #ec3236; font-weight: 600" ></i>
+                  Airport Pickup & Drop
+                </li>
+                <li>
+                  <i class="fa-regular fa-circle-check" style="color: #ec3236; font-weight: 600" ></i>
+                  Amazing Boat Rides
+                </li>
+                <li>
+                  <i class="fa-regular fa-circle-check" style="color: #ec3236; font-weight: 600" ></i>
+                  Darshan at Temples
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-12 col-lg-6 d-flex justify-content-center align-items-center">
+            <form action="" class="contact_form" >
+              <h6 class="text-center me-2" style="color: #ec3236; font-weight: 700;">~<span id="query" style="text-align: center; padding: 5px;">.</span></h6>
+              <div class="name">
+                <input type="text" placeholder="Your Name">
+              </div>
+              <div class="name">
+                <input type="text" placeholder="Phone No.">
+              </div>
+              <div class="name">
+                <input type="email" placeholder="Your Email">
+              </div>
+              <div class="name">
+                <textarea name="" id="" cols="30" rows="2" placeholder="Youe Message"></textarea>
+              </div>
+              <div class="buttons d-flex justify-content-center align-items-center mt-3 mb-2">
+                <button class="sbumit_btn">Submit Now</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="svg_style">
+        <svg viewBox="0 0 1440 320">
+          <path
+            fill="#f58634"
+            fill-opacity="1"
+            d="M0,160L60,176C120,192,240,224,360,202.7C480,181,600,107,720,117.3C840,128,960,224,1080,218.7C1200,213,1320,107,1380,53.3L1440,0L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
+          ></path>
+        </svg>
+      </div>
+    </section>
+    <div class="loder">
+      <div class="spinner">
+        <div class="react1"></div>
+        <div class="react2"></div>
+        <div class="react3"></div>
+        <div class="react4"></div>
+        <div class="react5"></div>
+      </div>
+    </div>
+
+    <!-- app js -->
+    <script src="./assest/js/app.js"></script>
+    <!-- Bootstrap js -->
+    <script src="./assest/js/app.js"></script>
+    <!-- type js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var typed = new Typed("#mov", {
+        strings: [
+          ,
+          "Varanasi  ",
+          "Ayodhya ",
+          "Swarved Mahamandir ",
+          "Prayagraj",
+        ],
+        typeSpeed: 200,
+        backSpeed: 150,
+        loop: true,
+      });
+    </script>
+     <script>
+      var typed = new Typed("#query", {
+        strings: [, "Requesting a Free Quote", "Price Quote Inquiry"],
+        typeSpeed: 100,
+        backSpeed: 100,
+        loop: true,
+      });
+    </script>
+    <script>
+      var typed = new Typed("#visit", {
+        strings: [, " Ayodhya ", " Swarved Mahamandir ", " Prayagraj"],
+        typeSpeed: 200,
+        backSpeed: 150,
+        loop: true,
+      });
+    </script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        freeMode: true,
+        loop: true,
+        autoplay: {
+          delay: 4000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          1124: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
