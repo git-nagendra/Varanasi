@@ -9,7 +9,24 @@ body {
   height: 100%;
   width: 100%;
 }
-
+.sticky{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9909;
+  width: 100%;
+  animation-duration: 1.5s;
+  animation-name: smooth;
+  box-shadow: 0 0 10px rgb(137, 136, 136);
+}
+@keyframes smooth {
+  from {
+    opacity: 0;
+  }
+  to {
+   opacity: 1;
+  }
+}
 .Header_bg_color {
   background: #ffffff;
   /* position: absolute;
@@ -17,6 +34,7 @@ body {
   left: 0;
   z-index: 99;
   width: 100%; */
+  transition: width 0.5s ease-in-out;
 }
 .logo {
   height: 70px;
@@ -142,6 +160,7 @@ nav ul li:last-child {
 .image1,
 .image2,
 .image3,
+
 .image4 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
     url(../image/vara.jpg);
@@ -690,11 +709,13 @@ nav ul li:last-child {
   border-radius: 4px;
   overflow: hidden;
   width: 180px;
+  border: 1px solid #ed8506;  
 }
 .Service_image {
   height: 120px;
   width: 100%;
   object-fit: contain;
+  
 }
 .Service_image img {
   width: 100%;
@@ -895,6 +916,7 @@ nav ul li:last-child {
   padding: 20px;
   background-color: #ffffff;
   box-shadow: 0 0 10px rgb(50, 50, 50);
+  border-radius: 5px;
 }
 .name {
   width: 100%;
@@ -919,33 +941,83 @@ nav ul li:last-child {
   color: #eb3336;
   
 }
-.sbumit_btn.sbumit_btn:hover{
-  animation: myAnimatio
-  n 4s forwards;
+.sbumit_btn:focus,
+.sbumit_btn:hover {
+  animation-name: myAnimation;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
 }
 @keyframes myAnimation {
   16.65% {
     transform: translateX(8px);
   }
   33.3% {
-    transform: translateX(-8px);
+    transform: translateX(-6px);
   }
   49.95% {
     transform: translateX(4px);
   }
   66.6% {
-    transform: translateX(-4px);
+    transform: translateX(-2px);
   }
   83.25% {
-    transform: translateX(2px);
+    transform: translateX(1px);
   }
-
   100% {
     transform: translateX(0);
   }
 }
+.footer_bg{
+  /* background: #1f1d1d; */
+  background: #4b191a;
+  color: #ffffff;
+  background-image:url(../image/bg-footer.png);
+  background-position: center left;
+  background-repeat: no-repeat;
+  z-index: 99;
+}
+.foote_menu {
+  padding: 0;
+  margin: 0;
+}
+.foote_menu li{
+  list-style: none;
+  margin-top: 6px;
+}
+.foote_menu li:hover a{
+  color: #eb3336;
+}
+.foote_menu li a{
+  text-decoration: none;
+  color: #ffffff;
+}
+.foote_menu .fa-angles-right{
+  margin-right: 8px;
+}
+.socila_icon{
+  padding: 0;
+  margin: 0;
+}
+.socila_icon li{
+  list-style: none;
+}
+.socila_icon li a{
+  text-decoration: none;
+  color: #ffffff;
+}
 
-
+.socila_icon .fa-solid {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 39px;
+  border: 2px solid #eb3336;
+  border-radius: 50%;
+  margin: 3px;
+  background: #ffffff;
+  color: #ed8506;
+}
 
 
 @media only screen and (max-width: 1110px) {
@@ -983,11 +1055,20 @@ nav ul li:last-child {
   .World h1 {
     font-size: 25px;
   }
+  .footer_bg{
+    /* background: #1f1d1d; */
+    background: #4b191a;
+    color: #ffffff;
+    background-image:initial;
+    background-position: center left;
+    background-repeat: no-repeat;
+    z-index: 99;
+  }
   
 }
 @media only screen and (max-width: 778px) {
   .tour_Packages {
-    max-width: 500px;
+    max-width: 450px;
     width: 100%;
     border-radius: 8px;
     overflow: hidden;

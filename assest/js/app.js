@@ -63,3 +63,15 @@ ham.addEventListener('click',()=>{
   ham.classList.toggle('transform');
   nav.classList.toggle('mobile');
 })
+var topHeader =document.querySelector('.Header_bg_color');
+console.log(topHeader);
+window.addEventListener('scroll', function(){
+  if (window.scrollY <= 100) {
+    topHeader.classList.remove('sticky');
+  }
+  else{
+    topHeader.classList.add('sticky');
+  }
+   
+   
+});
