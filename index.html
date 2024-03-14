@@ -38,7 +38,7 @@
         </div>
         <nav>
           <ul class="nav_menu">
-            <li><a href="#" class="active">Home</a></li>
+            <li><a href="index.html" class="active">Home</a></li>
             <li><a href="#">Destination</a></li>
             <li><a href="#">Tours</a></li>
             <li class="sub_menu">
@@ -50,12 +50,12 @@
                   ><i class="fa-solid fa-chevron-down"></i></span
               ></a>
               <ul class="sub_link">
-                <li><a href="#">Blog Single</a></li>
-                <li><a href="#">Full Width List</a></li>
-                <li><a href="#">Blog Sidebar</a></li>
-                <li><a href="#">Left Sidebar</a></li>
-                <li><a href="#">Right Sidebar</a></li>
-                <li><a href="#">Blo No Result</a></li>
+                <li><a href="#"><span><i class="fa-solid fa-chevron-right"></i></span>Blog Single</a></li>
+                <li><a href="#"><span><i class="fa-solid fa-chevron-right"></i></span>Full Width List</a></li>
+                <li><a href="#"><span><i class="fa-solid fa-chevron-right"></i></span>Blog Sidebar</a></li>
+                <li><a href="#"><span><i class="fa-solid fa-chevron-right"></i></span>Left Sidebar</a></li>
+                <li><a href="#"><span><i class="fa-solid fa-chevron-right"></i></span>Right Sidebar</a></li>
+                <li><a href="#"> <span><i class="fa-solid fa-chevron-right"></i></span>Blo No Result</a></li>
               </ul>
             </li>
             <li><a href="#">Care</a></li>
@@ -174,7 +174,7 @@
 
       <div class="arrows">
         <button id="prev"><i class="fa-solid fa-chevron-left"></i></button>
-        <button id="next"><i class="fa-solid fa-chevron-right"></i></button>
+        <button id="next"><i class="fa-solid fa-chevron-right Right"></i></button>
       </div>
       <!-- time running -->
       <div class="time"></div>
@@ -271,7 +271,7 @@
       <div class="container py-5">
         <div class="row">
           <div class="col-sm-6 heading">
-            <h1>Our Tour Packages</h1>
+            <h1 class="transprant">Our Tour Packages</h1>
             <p>The trending tours are based on user bookings.</p>
           </div>
           <div class="col-sm-6 d-flex justify-content-end">
@@ -285,72 +285,136 @@
             </div>
           </div>
         </div>
-        <div class="row mt-2 g-4">
+        <div class="row mt-2 g-3">
           <div
             class="col-md-6 col-lg-3 d-flex justify-content-center align-items-center"
           >
-            <div class="tour_Packages">
-              <div class="tour_Package_image">
-                <img src="./assest/image/tour.jpg" alt="" loading="lazyca" />
-              </div>
-              <div class="detail_wrapper">
-                <div class="prise_text">
-                  <h5>VARANASI AYODHAYA TOUR</h5>
-                  <p>Prayagraj | varanasi |</p>
+          <div class="tour_Packages">
+            <a href="./Detail.html" style="text-decoration: none !important; color: initial;">
+                <div class="tour_Package_image">
+                  <img src="./assest/image/tour.jpg" alt="" loading="lazyca" />
                 </div>
-                <div class="rating d-flex justify-content-between">
-                  <p>From</p>
-                  <div class="star_wrapper">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star-half-stroke"></i>
-                    <i class="fa-regular fa-star"></i>
+                <div class="detail_wrapper">
+                  <div class="prise_text">
+                    <h5>VARANASI AYODHAYA TOUR</h5>
+                    <p>Prayagraj | varanasi |</p>
                   </div>
-                </div>
-                <div class="prise_detail d-flex justify-content-between">
-                  <h6>₹1200.00/Person</h6>
-                  <div class="star_text">
-                    <p>4.7 (577)</p>
+                  <div class="rating d-flex justify-content-between">
+                    <p>From</p>
+                    <div class="star_wrapper">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </div>
                   </div>
-                </div>
-                <div class="time">
-                  <p>
-                    <span>
+                  <div class="prise_detail d-flex justify-content-between">
+                    <h6>₹1200.00/Person</h6>
+                    <div class="star_text">
+                      <p>4.7 (577)</p>
+                    </div>
+                  </div>
+                  <div class="time">
+                    <p>
+                      <span>
+                        <span class="me-2"
+                          ><i
+                            class="fa-regular fa-clock"
+                            style="font-weight: 600"
+                          ></i></span
+                        >2 Day </span
+                      >|<span>0 Night</span>
+                    </p>
+                    <p>
                       <span class="me-2"
                         ><i
-                          class="fa-regular fa-clock"
-                          style="font-weight: 600"
+                          class="fa-regular fa-circle-check"
+                          style="color: #ec3236; font-weight: 600"
                         ></i></span
-                      >2 Day </span
-                    >|<span>0 Night</span>
-                  </p>
-                  <p>
-                    <span class="me-2"
-                      ><i
-                        class="fa-regular fa-circle-check"
-                        style="color: #ec3236; font-weight: 600"
-                      ></i></span
-                    >Included Hotel
-                  </p>
-                  <p>
-                    <span class="me-2"
-                      ><i
-                        class="fa-regular fa-circle-check"
-                        style="color: #ec3236; font-weight: 600"
-                      ></i></span
-                    >Included Food
-                  </p>
+                      >Included Hotel
+                    </p>
+                    <p>
+                      <span class="me-2"
+                        ><i
+                          class="fa-regular fa-circle-check"
+                          style="color: #ec3236; font-weight: 600"
+                        ></i></span
+                      >Included Food
+                    </p>
+                  </div>
                 </div>
+              </a>
               </div>
-            </div>
+          </div>
+          <div
+            class="col-md-6 col-lg-3 d-flex justify-content-center align-items-center"
+          >
+          <div class="tour_Packages">
+                <a href="" style="text-decoration: none !important; color: initial;">
+                <div class="tour_Package_image">
+                  <img src="./assest/image/new.jpg" alt="" loading="lazyca" />
+                </div>
+                <div class="detail_wrapper">
+                  <div class="prise_text">
+                    <h5>VARANASI AYODHAYA TOUR</h5>
+                    <p>Prayagraj | varanasi |</p>
+                  </div>
+                  <div class="rating d-flex justify-content-between">
+                    <p>From</p>
+                    <div class="star_wrapper">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </div>
+                  </div>
+                  <div class="prise_detail d-flex justify-content-between">
+                    <h6>₹1200.00/Person</h6>
+                    <div class="star_text">
+                      <p>4.7 (577)</p>
+                    </div>
+                  </div>
+                  <div class="time">
+                    <p>
+                      <span>
+                        <span class="me-2"
+                          ><i
+                            class="fa-regular fa-clock"
+                            style="font-weight: 600"
+                          ></i></span
+                        >2 Day </span
+                      >|<span>0 Night</span>
+                    </p>
+                    <p>
+                      <span class="me-2"
+                        ><i
+                          class="fa-regular fa-circle-check"
+                          style="color: #ec3236; font-weight: 600"
+                        ></i></span
+                      >Included Hotel
+                    </p>
+                    <p>
+                      <span class="me-2"
+                        ><i
+                          class="fa-regular fa-circle-check"
+                          style="color: #ec3236; font-weight: 600"
+                        ></i></span
+                      >Included Food
+                    </p>
+                  </div>
+                </div>
+              </a>
+              </div>
           </div>
           <div
             class="col-md-6 col-lg-3 d-flex justify-content-center align-items-center"
           >
             <div class="tour_Packages">
+              <a href="var" style="text-decoration: none !important; color: initial;"></a>
               <div class="tour_Package_image">
-                <img src="./assest/image/tour.jpg" alt="" loading="lazyca" />
+                <img src="./assest/image/vara1.jpg" alt="" loading="lazyca" />
               </div>
               <div class="detail_wrapper">
                 <div class="prise_text">
@@ -402,125 +466,67 @@
                   </p>
                 </div>
               </div>
+            </a>
             </div>
           </div>
           <div
             class="col-md-6 col-lg-3 d-flex justify-content-center align-items-center"
           >
-            <div class="tour_Packages">
-              <div class="tour_Package_image">
-                <img src="./assest/image/tour.jpg" alt="" loading="lazyca" />
+          <div class="tour_Packages">
+            <div class="tour_Package_image">
+              <img src="./assest/image/Ayodhya-temple.webp" alt="" loading="lazyca" />
+            </div>
+            <div class="detail_wrapper">
+              <div class="prise_text">
+                <h5>VARANASI AYODHAYA TOUR</h5>
+                <p>Prayagraj | varanasi |</p>
               </div>
-              <div class="detail_wrapper">
-                <div class="prise_text">
-                  <h5>VARANASI AYODHAYA TOUR</h5>
-                  <p>Prayagraj | varanasi |</p>
+              <div class="rating d-flex justify-content-between">
+                <p>From</p>
+                <div class="star_wrapper">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                  <i class="fa-regular fa-star"></i>
                 </div>
-                <div class="rating d-flex justify-content-between">
-                  <p>From</p>
-                  <div class="star_wrapper">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star-half-stroke"></i>
-                    <i class="fa-regular fa-star"></i>
-                  </div>
+              </div>
+              <div class="prise_detail d-flex justify-content-between">
+                <h6>₹1200.00/Person</h6>
+                <div class="star_text">
+                  <p>4.7 (577)</p>
                 </div>
-                <div class="prise_detail d-flex justify-content-between">
-                  <h6>₹1200.00/Person</h6>
-                  <div class="star_text">
-                    <p>4.7 (577)</p>
-                  </div>
-                </div>
-                <div class="time">
-                  <p>
-                    <span>
-                      <span class="me-2"
-                        ><i
-                          class="fa-regular fa-clock"
-                          style="font-weight: 600"
-                        ></i></span
-                      >2 Day </span
-                    >|<span>0 Night</span>
-                  </p>
-                  <p>
+              </div>
+              <div class="time">
+                <p>
+                  <span>
                     <span class="me-2"
                       ><i
-                        class="fa-regular fa-circle-check"
-                        style="color: #ec3236; font-weight: 600"
+                        class="fa-regular fa-clock"
+                        style="font-weight: 600"
                       ></i></span
-                    >Included Hotel
-                  </p>
-                  <p>
-                    <span class="me-2"
-                      ><i
-                        class="fa-regular fa-circle-check"
-                        style="color: #ec3236; font-weight: 600"
-                      ></i></span
-                    >Included Food
-                  </p>
-                </div>
+                    >2 Day </span
+                  >|<span>0 Night</span>
+                </p>
+                <p>
+                  <span class="me-2"
+                    ><i
+                      class="fa-regular fa-circle-check"
+                      style="color: #ec3236; font-weight: 600"
+                    ></i></span
+                  >Included Hotel
+                </p>
+                <p>
+                  <span class="me-2"
+                    ><i
+                      class="fa-regular fa-circle-check"
+                      style="color: #ec3236; font-weight: 600"
+                    ></i></span
+                  >Included Food
+                </p>
               </div>
             </div>
           </div>
-          <div
-            class="col-md-6 col-lg-3 d-flex justify-content-center align-items-center"
-          >
-            <div class="tour_Packages">
-              <div class="tour_Package_image">
-                <img src="./assest/image/tour.jpg" alt="" loading="lazyca" />
-              </div>
-              <div class="detail_wrapper">
-                <div class="prise_text">
-                  <h5>VARANASI AYODHAYA TOUR</h5>
-                  <p>Prayagraj | varanasi |</p>
-                </div>
-                <div class="rating d-flex justify-content-between">
-                  <p>From</p>
-                  <div class="star_wrapper">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star-half-stroke"></i>
-                    <i class="fa-regular fa-star"></i>
-                  </div>
-                </div>
-                <div class="prise_detail d-flex justify-content-between">
-                  <h6>₹1200.00/Person</h6>
-                  <div class="star_text">
-                    <p>4.7 (577)</p>
-                  </div>
-                </div>
-                <div class="time">
-                  <p>
-                    <span>
-                      <span class="me-2"
-                        ><i
-                          class="fa-regular fa-clock"
-                          style="font-weight: 600"
-                        ></i></span
-                      >2 Day </span
-                    >|<span>0 Night</span>
-                  </p>
-                  <p>
-                    <span class="me-2"
-                      ><i
-                        class="fa-regular fa-circle-check"
-                        style="color: #ec3236; font-weight: 600"
-                      ></i></span
-                    >Included Hotel
-                  </p>
-                  <p>
-                    <span class="me-2"
-                      ><i
-                        class="fa-regular fa-circle-check"
-                        style="color: #ec3236; font-weight: 600"
-                      ></i></span
-                    >Included Food
-                  </p>
-                </div>
-              </div>
-            </div>
           </div>
           <div
             class="col-md-6 col-lg-3 d-flex justify-content-center align-items-center"
@@ -766,7 +772,7 @@
         <div class="row pb-5">
           <div class="row">
             <div class="col-12 heading">
-              <h1>Services We Provide</h1>
+              <h1 class="transprant">Services We Provide</h1>
               <p>The trending tours are based on user bookings</p>
             </div>
           </div>
@@ -872,7 +878,7 @@
         <div class="row">
           <div class="col-sm-6">
             <div class="heading">
-              <h1>Cab Booking</h1>
+              <h1 class="transprant">Cab Booking</h1>
               <p>The trending tours are based on user bookings.</p>
             </div>
           </div>
@@ -1425,7 +1431,7 @@
           <div
             class="col-sm-12 col-lg-6 mt-lg-0 mt-5 World d-flex justify-content-center align-items-start flex-column ps-sm-5 ps-3"
           >
-            <h1>About Varanasi</h1>
+            <h1 class="transprant">About Varanasi</h1>
             <p>
               Regarding the creation of Kashi, it is mentioned in the Shiv
               Purana that the Advaita Parameshwara, who was engrossed in his
@@ -1529,7 +1535,7 @@
           <div
             class="col-sm-12 col-lg-6 mt-lg-0 mt-5 World d-flex justify-content-center align-items-start flex-column ps-sm-5 ps-3"
           >
-            <h1 class="mt-md-0 mt-4">
+            <h1 class="mt-md-0 mt-4 transprant">
               Discover The World<br />
               With Our Guide
             </h1>
@@ -1582,12 +1588,12 @@
           <div
             class="heading d-flex justify-content-center align-items-center flex-column"
           >
-            <h1>What Our Clients Say</h1>
+            <h1 class="transprant">What Our Clients Say</h1>
             <p>The trending tours are based on user bookings.</p>
           </div>
         </div>
         <div class="row mt-2">
-          <div class="swiper mySwiper">
+          <div class="swiper client">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div class="client_wrapper">
@@ -1756,11 +1762,11 @@
         <div class="row g-4">
           <div class="col-md-12 col-lg-6">
             <div class="heading">
-              <h1>Are you planning to</h1>
-              <h1 class="me-2">
+              <h1 class="transprant">Are you planning to</h1>
+              <h1 class="me-2 transprant">
                 Visit<span
                   id="visit"
-                  style="color: #ec3236; padding: 10px; font-size: 25px"
+                  style="color: #ec3236 !important; padding: 10px; font-size: 22px"
                 >
                   Kashi ~ Varanasi</span
                 >
@@ -1953,6 +1959,8 @@
 
     <!-- app js -->
     <script src="./assest/js/app.js"></script>
+    <!-- slider js -->
+    <script src="./assest/js/slider.js"></script>
     <!-- Bootstrap js -->
     <script src="./assest/js/app.js" defer></script>
     <!-- type js -->
@@ -1974,6 +1982,20 @@
       });
     </script>
     <script>
+      var typed = new Typed("#visit", {
+        strings: [
+          ,
+          "Varanasi  ",
+          "Ayodhya ",
+          "Swarved Mahamandir ",
+          "Prayagraj",
+        ],
+        typeSpeed: 200,
+        backSpeed: 150,
+        loop: true,
+      });
+    </script>
+    <script>
       var typed = new Typed("#query", {
         strings: [, "Requesting a Free Quote", "Price Quote Inquiry"],
         typeSpeed: 100,
@@ -1982,15 +2004,7 @@
       });
     </script>
     <script>
-      var typed = new Typed("#visit", {
-        strings: [, " Ayodhya ", " Swarved Mahamandir ", " Prayagraj"],
-        typeSpeed: 200,
-        backSpeed: 150,
-        loop: true,
-      });
-    </script>
-    <script>
-      var swiper = new Swiper(".mySwiper", {
+      var swiper = new Swiper(".client", {
         slidesPerView: 1,
         spaceBetween: 10,
         freeMode: true,
