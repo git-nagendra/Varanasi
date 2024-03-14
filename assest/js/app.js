@@ -1,15 +1,12 @@
-
-
-
 var ham =document.querySelector('.ham');
 var nav =document.querySelector('.nav_menu')
-console.log(nav);
+
 ham.addEventListener('click',()=>{
   ham.classList.toggle('transform');
   nav.classList.toggle('mobile');
 })
 var topHeader =document.querySelector('.Header_bg_color');
-console.log(topHeader);
+
 window.addEventListener('scroll', function(){
   if (window.scrollY <= 100) {
     topHeader.classList.remove('sticky');
@@ -18,12 +15,11 @@ window.addEventListener('scroll', function(){
     topHeader.classList.add('sticky');
   }
    
-   
 });
 
 
 const tabs = document.querySelectorAll('.tab_contant');
-console.log(tabs);
+
 const tabBtns = document.querySelectorAll('.tabBtn li');
 
 tabBtns.forEach((tabBtn, index) => {
@@ -41,10 +37,14 @@ tabBtns.forEach((tabBtn, index) => {
   });
 });
 
+
+const loader = document.querySelector('.loader');
+console.log(loader);
+
+window.addEventListener("load", (event) => {
+  loader.style.display="none";
+});
 tabBtns[0].click();
-
-
-
 
 
 let nextDom = document.getElementById("next");
@@ -96,12 +96,6 @@ function showSlider(type) {
   runNextAuto = setTimeout(() => {
     next.click();
   }, timeAutoNext);
-}
-
-const loder =document.querySelector('.loder');
-console.log(loder);
-window.onload = function() {
-  loder.style.display="none";
 }
 
 
