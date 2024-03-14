@@ -1,51 +1,3 @@
-var ham =document.querySelector('.ham');
-var nav =document.querySelector('.nav_menu')
-
-ham.addEventListener('click',()=>{
-  ham.classList.toggle('transform');
-  nav.classList.toggle('mobile');
-})
-var topHeader =document.querySelector('.Header_bg_color');
-
-window.addEventListener('scroll', function(){
-  if (window.scrollY <= 100) {
-    topHeader.classList.remove('sticky');
-  }
-  else{
-    topHeader.classList.add('sticky');
-  }
-   
-});
-
-
-const tabs = document.querySelectorAll('.tab_contant');
-
-const tabBtns = document.querySelectorAll('.tabBtn li');
-
-tabBtns.forEach((tabBtn, index) => {
-  tabBtn.addEventListener('click', () => {
-    tabBtns.forEach(otherActive => {
-      otherActive.classList.remove('active');
-    });
-    tabBtn.classList.add('active');
-
-    tabs.forEach(tabClass => {
-      tabClass.classList.remove('active');
-    });
-
-    tabs[index].classList.add('active');
-  });
-});
-
-
-const loader = document.querySelector('.loader');
-console.log(loader);
-
-window.addEventListener("load", (event) => {
-  loader.style.display="none";
-});
-tabBtns[0].click();
-
 
 let nextDom = document.getElementById("next");
 let prevDom = document.getElementById("prev");
@@ -98,4 +50,53 @@ function showSlider(type) {
   }, timeAutoNext);
 }
 
+
+
+var ham =document.querySelector('.ham');
+var nav =document.querySelector('.nav_menu')
+
+ham.addEventListener('click',()=>{
+  ham.classList.toggle('transform');
+  nav.classList.toggle('mobile');
+})
+var topHeader =document.querySelector('.Header_bg_color');
+
+window.addEventListener('scroll', function(){
+  if (window.scrollY <= 100) {
+    topHeader.classList.remove('sticky');
+  }
+  else{
+    topHeader.classList.add('sticky');
+  }
+   
+});
+
+
+const tabs = document.querySelectorAll('.tab_contant');
+
+const tabBtns = document.querySelectorAll('.tabBtn li');
+
+tabBtns.forEach((tabBtn, index) => {
+  tabBtn.addEventListener('click', () => {
+    tabBtns.forEach(otherActive => {
+      otherActive.classList.remove('active');
+    });
+    tabBtn.classList.add('active');
+
+    tabs.forEach(tabClass => {
+      tabClass.classList.remove('active');
+    });
+
+    tabs[index].classList.add('active');
+  });
+});
+
+
+const loader = document.querySelector('.loader');
+console.log(loader);
+
+window.addEventListener("load", (event) => {
+  loader.style.display="none";
+});
+tabBtns[0].click();
 
