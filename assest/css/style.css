@@ -39,9 +39,11 @@ body {
   width: 100%; */
   transition: width 0.5s ease-in-out;
 }
+
 .logo {
-  height: 70px;
-  width: 85px;
+  height: 82px;
+  width: 84px;
+  padding: 6px 4px;
 }
 .typed-cursor {
   display: none !important;
@@ -56,13 +58,13 @@ nav ul {
 }
 nav ul li {
   display: inline-block;
-  margin-right: 20px;
+  margin-right: 15px;
   list-style: none;
 }
 nav ul li > a {
   color: rgb(5, 3, 46);
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 500;
   transition: all 0.4s ease-in-out;
   padding-bottom: 20px;
 }
@@ -1010,9 +1012,11 @@ nav ul li:last-child {
 .foote_menu li a{
   text-decoration: none;
   color: #ffffff;
+  font-size: 14px;
 }
 .foote_menu .fa-angles-right{
   margin-right: 8px;
+  font-size: 14px;
 }
 .socila_icon{
   padding: 0;
@@ -1024,6 +1028,7 @@ nav ul li:last-child {
 .socila_icon li a{
   text-decoration: none;
   color: #ffffff;
+  font-size: 14px;
 }
 
 .socila_icon .fa-solid {
@@ -1139,6 +1144,9 @@ nav ul li:last-child {
 .right_wrapper{
   border: 1px solid rgb(222, 218, 218);
   background: #ffffff;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 75px;
 }
 .detail_list ul {
   padding: 0;
@@ -1192,8 +1200,8 @@ p{
   margin-bottom: 20px;
 }
 .tabBtn {
-  padding: 0;
-  margin: 0;
+  padding: 0 !important;
+  margin: 0 !important;
   list-style: none;
 }
 .tabBtn li{
@@ -1228,14 +1236,26 @@ p{
   background: #eb3336;
   transition: all 0.5s ease-in-out;
 }
+
 .tab_contant{
+ visibility: hidden;
+ opacity: 0;
+ transition: all 0.5s ease-in-out;
  display: none;
 }
 .tab_contant.active{
-display: block;
+  visibility: visible;
+  opacity: 1;
+  display: block;
 }
-
-
+.day{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.day li{
+  margin-top: 6px;
+}
 
 
 
@@ -1284,6 +1304,18 @@ display: block;
     background-repeat: no-repeat;
     z-index: 99;
   }
+  @keyframes move {
+    0%{
+      transform: translateX(0px);
+    }
+    50%{
+      transform: translateX(40px);
+    }
+    100%{
+      transform: translateX(0px);
+    }
+  }
+  
   
 }
 @media only screen and (max-width: 778px) {
@@ -1303,5 +1335,8 @@ display: block;
   }
   .svg_style{
     display: none;
+  } 
+  .container{
+    padding: 0 20px !important;
   } 
 }
