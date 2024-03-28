@@ -940,10 +940,18 @@ p {
 main {
   position: relative;
   width: 100%;
-  height: 100vh;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+  height: 100%;
   overflow: hidden;
 }
+/* .main_overlay{
+  background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3));
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+} */
 
 .item {
   width: 200px;
@@ -988,6 +996,7 @@ main {
 
 .content {
   max-width: 500px;
+  padding: 10px;
   width: 100%;
   position: absolute;
   top: 50%;
@@ -996,7 +1005,9 @@ main {
   color: white;
   text-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
   opacity: 1;
+  z-index: 9999;
   display: none;
+  
 
   & .title1,
   & .Varanasi,
@@ -1007,8 +1018,8 @@ main {
   & .title {
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 42px;
-    color: #ffffff;
+    font-size: 2.6rem;
+    color: black;
     position: relative;
   }
   .title1::after,
@@ -1021,7 +1032,7 @@ main {
     top: 0px;
     left: -1px;
     content: "Prayagraj";
-    color: red;
+    color: #ffffff;
     z-index: 99;
     height: 100%;
     width: 100%;
@@ -1044,7 +1055,7 @@ main {
   & .description {
     line-height: 1.7;
     margin: 1rem 0 1.5rem;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
 
   .Apply_btn{
@@ -1129,6 +1140,28 @@ main {
     list-style: none;
     margin-bottom: 10px;
   }
+  .item {
+    width: 160px;
+    height: 270px;
+    &:nth-child(3) {
+      left: 62%;
+      opacity: 0;
+    }
+    &:nth-child(4) {
+      left: calc(63% + 170px);
+      opacity: 0;
+    }
+    &:nth-child(5) {
+      left: calc(50% + 340px);
+      opacity: 0;
+    }
+    &:nth-child(6) {
+      left: calc(90% + 510px);
+      opacity: 0;
+    }
+    
+  }
+ 
 }
 @media only screen and (max-width: 998px) {
   .thumbnail {
@@ -1166,42 +1199,6 @@ main {
       transform: translateX(0px);
     }
   }
-
-  .content {
-    left: 1rem;
-    top: 30%;
-    & .title {
-      font-size: 1rem;
-    }
-    & .description {
-      font-size: 0.7rem;
-    }
-    & button {
-      font-size: 0.7rem;
-    }
-  }
-  .item {
-    width: 160px;
-    height: 270px;
-    border: 2px solid red;
-    &:nth-child(3) {
-      left: 62%;
-      opacity: 0;
-    }
-    &:nth-child(4) {
-      left: calc(63% + 170px);
-      opacity: 0;
-    }
-    &:nth-child(5) {
-      left: calc(50% + 340px);
-      opacity: 0;
-    }
-    &:nth-child(6) {
-      left: calc(90% + 510px);
-      opacity: 0;
-    }
-    
-  }
 }
 @media only screen and (max-width: 778px) {
   .tour_Packages {
@@ -1225,16 +1222,12 @@ main {
     padding: 0 13px !important;
   }
   .content {
-    & .title {
-      font-size: 0.9rem;
-    }
-    & .description {
-      font-size: 0.65rem;
-    }
-    & button {
-      font-size: 0.7rem;
-    }
+    left: 0.3rem;
   }
+  .nav {
+    bottom: 16rem;
+    left: 0.3rem;
+}
   /* .item {
     width: 130px;
     height: 220px;

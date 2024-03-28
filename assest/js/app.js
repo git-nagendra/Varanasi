@@ -33,7 +33,7 @@ function autoSlide() {
   const nextButton = document.querySelector(".next");
   nextButton.click(); 
 }
-//setInterval(autoSlide, 5000);
+setInterval(autoSlide, 5000);
 document.addEventListener("click", activate, false);
 
 
