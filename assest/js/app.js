@@ -66,3 +66,16 @@ tabBtns.forEach((tabBtn, index) => {
     tabBtn.click();
   }
 });
+
+
+const applyBtn = document.querySelectorAll('.buttons button')
+  console.log(applyBtn);
+applyBtn.forEach(element => {
+    element.addEventListener('mouseover',(event)=>{
+    const yPage = event.pageY - element.offsetTop;
+    const xPage = event.pageX - element.offsetLeft;
+
+    element.style.setProperty("--yPos", yPage + "px");
+    element.style.setProperty("--xPos", xPage + "px");
+  })
+});
